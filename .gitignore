@@ -1,2 +1,7 @@
 **/*.class
 .DS_Store
+*.class
+
+# Package Files #
+*.war
+*.ear
