@@ -2,14 +2,13 @@ hdr-generator
 =============
 
 
-Image fusion of an exposure series is one possibility to generate High Dynamic Range Images (HDRI) without the need for special hardware. A HDRI has -- compared to common used images -- a higher ratio between the brightest and the darkest pixel and is therefore more capable to represent real scenes with high dynamic range.
 
-The algorithm of Debevec and Malik used in this thesis estimates the response curve of the imaging process during the calculation of the HDRI by using an energy function.
+High Dynamic Range (HDR) image technology has gained ever more importance in the thriving field of Computional Photography. HDR images allow for highly detailed display of lighting contrasts.
+In this context, the ration between the brightest and darkest pixels is referred to as dynamic range. It is possible to compose images with highly increased dynamic range independent of dedicated hardware by merging single pictures of a series.
+This dissertation first discusses the method developed by Debevec and Malik which estimates the device specific response curve using an energy function in order to calculate the HDR image. The author then offers an alternating method, which allows for calculating the HDR image over all the pixels of an image series. Furthermore, three additions to the discussed energy formula will be proposed: Introducing a monotony condition to the response curve improves the physical and radiometric accuracy. Adding a (spatial) smoothness term to the calculation of the radiance map improves output, especially when handling noise in the input. Finally, replacing the quadric penalty term in the in the algorithm with a subquadric function which will improve robustness against measurement errors and outliers.
+In addition to the theoretical discussion on improving the energy formula, a Java imple- mentation is presented. Using this software, the impact of the proposed additions were experimentally tested and evaluated.
 
-We discuss a alternating approach for this algorithm which allows it to use all the pixels of the exposure series for the calculation of the HDRI. Three extensions for the used energy function are introduced:
-An additional monotony constraint ensures that the estimated response curve is correcter under physical and radiometic aspects. The calculation of the radiance map is extended by a (spatial) smoothness term, which should lead to improvements in the output, especially when we consider noise in the input. In addition we replace the quadratic penalty terms in the algorithm by subquadratic functions. This should lead to an improvement regarding the robustness against measurement errors and outliers.
 
-On top of the theoretical elaboration of the extensions an implementation in Java is presented. This software will be used to examine and evaluate the influence of the introdruced extensions.
 
 This repository contains the bachelor-thesis itself and the software to generate HDR images out of a series of pictures with different exposure times. 
 
