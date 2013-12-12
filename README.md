@@ -23,7 +23,7 @@ http://photography.tutsplus.com/tutorials/how-to-shoot-and-post-process-professi
 External Libraries
 -------------
 - http://www.java2s.com/Code/Java/Swing-JFC/NumericTextField.htm
-- https://code.google.com/p/metadata- extractor/
+- https://code.google.com/p/metadata-extractor/
 - http://www.adobe.com/devnet/xmp.html
 - http://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html
 
