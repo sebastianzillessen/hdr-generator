@@ -1,0 +1,23 @@
+Kurzfassung
+------------
+
+In den letzten Jahren hat die Bedeutung von High Dynamic Range (HDR) Bildern im aufstrebenden Forschungsgebiet "Computational Photography" stark zugenommen. HDR-Bilder können große Helligkeitsunterschiede detailreich wiedergeben. 
+
+Das Verhältnis zwischen hellstem und dunkelstem Bildpunkt wird als "Dynamikumfang" bezeichnet. Bilder mit erweitertem Dynamikumfang können durch die Fusionierung von Einzelaufnahmen einer Belichtungsserie auch ohne spezielle Hardware erzeugt werden. Das in dieser Ausarbeitung verwendete Verfahren von Debevec und Malik schätzt neben der Berechnung des HDR-Bildes auch die kameraspezifische Antwortkurve des Bildaufnahmeprozesses mithilfe einer Energiefunktion.  
+
+Die vorliegende Arbeit stellt einen alternierenden Lösungsansatz für dieses Verfahren vor, durch das die Verwendung aller Bildpunkte der Belichtungsserie bei der Berechnung des HDR-Bildes möglich ist. Darüber hinaus werden drei Erweiterungen der Energiefunktion vorgestellt: Das Einführen einer Forderung von Monotonie der Antwortkurve soll die physikalische und radiometrische Korrektheit verbessern. Die Berechnung des HDR-Bildes wird um einen (räumlichen) Glattheitsterm erweitert, der insbesondere bei Rauschen zu einer verbesserten Ausgabe führen soll. Zudem werden die quadratischen Bestrafungsterme des Ausgangsverfahrens durch subquadratische Funktionen ersetzt. Dies soll zu einer Verbesserung des Verfahrens bezüglich der Robustheit gegenüber Fehlmessungen und Ausreißern führen.
+
+Neben der theoretischen Ausarbeitung der Erweiterungen des Verfahrens wird darüber hinaus eine Realisierung in Java vorgestellt. Mithilfe dieser Software werden die Einflüsse der verschiedenen Erweiterungen experimentell untersucht und evaluiert.
+
+
+
+Abstract
+------------
+
+High Dynamic Range (HDR) image technology has gained ever more importance in the thriving field of "Computional Photography". HDR images allow for highly detailed display of lighting contrasts. 
+
+In this context, the ration between the brightest and darkest pixels is referred to as dynamic range. It is possible to compose images with highly increased dynamic range independent of dedicated hardware by merging single pictures of a series. 
+
+This dissertation discusses the method developed by Debevec and Malik which estimates the device specific response curve using an energy function in order to calculate the HDR image. The author then offers an alternating method, which allows to calculate a HDR image over all pixels of an image series. Furthermore, three additions to the discussed energy formula will be proposed: Introducing a monotony condition to the response curve improves the physical and radiometric accuracy. Adding a (spatial) smoothness term to the calculation of the radiance map improves output, especially when handling noise in the input. Finally, replacing the quadric penalty term in the algorithm with a subquadric function which will improve robustness against measurement errors and outliers.
+
+In addition to the theoretical discussion on improving the energy formula, a Java implementation is presented. Using this software, the impact of the proposed additions were experimentally tested and evaluated.
